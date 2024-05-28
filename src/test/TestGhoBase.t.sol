@@ -14,7 +14,7 @@ import {AccessControlErrorsLib, OwnableErrorsLib} from './helpers/ErrorsLib.sol'
 import {DataTypes} from '@aave/core-v3/contracts/protocol/libraries/types/DataTypes.sol';
 import {Errors} from '@aave/core-v3/contracts/protocol/libraries/helpers/Errors.sol';
 import {PercentageMath} from '@aave/core-v3/contracts/protocol/libraries/math/PercentageMath.sol';
-import {SafeCast} from '@aave/core-v3/contracts/dependencies/openzeppelin/contracts/SafeCast.sol';
+import {SafeCast} from '@openzeppelin/contracts/utils/math/SafeCast.sol';
 import {WadRayMath} from '@aave/core-v3/contracts/protocol/libraries/math/WadRayMath.sol';
 
 // mocks
@@ -45,7 +45,7 @@ import {IFixedRateStrategyFactory} from '../contracts/facilitators/aave/interest
 
 // non-GHO contracts
 import {AdminUpgradeabilityProxy} from '@aave/core-v3/contracts/dependencies/openzeppelin/upgradeability/AdminUpgradeabilityProxy.sol';
-import {ERC20} from '@aave/core-v3/contracts/dependencies/openzeppelin/contracts/ERC20.sol';
+import {ERC20} from '@openzeppelin/contracts/token/ERC20/ERC20.sol';
 import {StakedAaveV3} from 'aave-stk-v1-5/src/contracts/StakedAaveV3.sol';
 import {ReserveConfiguration} from '@aave/core-v3/contracts/protocol/libraries/configuration/ReserveConfiguration.sol';
 

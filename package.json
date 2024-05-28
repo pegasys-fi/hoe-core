@@ -96,5 +96,8 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/aave/gho"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.6"
   }
 }
