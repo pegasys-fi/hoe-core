@@ -1,5 +1,5 @@
-@aave/core-v3/=lib/aave-v3-core/
-@aave/periphery-v3/=lib/aave-v3-periphery/
+@pegasys-fi/lending-core/=lib/core/
+@pegasys-fi/lending-periphery/=lib/periphery/
 aave-stk-v1-5/=lib/aave-stk-v1-5/
 ds-test/=lib/forge-std/lib/ds-test/src/
 eth-gas-reporter/=node_modules/eth-gas-reporter/

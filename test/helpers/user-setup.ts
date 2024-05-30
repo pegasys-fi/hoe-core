@@ -3,7 +3,7 @@ import { tEthereumAddress } from '../../helpers/types';
 import { BigNumber } from 'ethers';
 import { IERC20 } from '../../types';
 import { ContractTransaction } from 'ethers';
-import { Faucet } from '@aave/deploy-v3';
+import { Faucet } from '@pollum-io/lending-deploy';
 
 export const distributeErc20 = async (
   erc20: IERC20,

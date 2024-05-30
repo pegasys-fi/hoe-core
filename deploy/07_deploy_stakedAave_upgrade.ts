@@ -1,5 +1,5 @@
 import { DeployFunction } from 'hardhat-deploy/types';
-import { StakedTokenV2Rev3__factory, STAKE_AAVE_PROXY, waitForTx } from '@aave/deploy-v3';
+import { StakedTokenV2Rev3__factory, STAKE_AAVE_PROXY, waitForTx } from '@pollum-io/lending-deploy';
 
 const func: DeployFunction = async function ({ getNamedAccounts, deployments, ...hre }) {
   const { deploy } = deployments;

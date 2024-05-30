@@ -1,6 +1,6 @@
 import { task } from 'hardhat/config';
 
-import { getAaveOracle } from '@aave/deploy-v3';
+import { getAaveOracle } from '@pollum-io/lending-deploy';
 
 task('set-gho-oracle', 'Set oracle for gho in Aave Oracle').setAction(async (_, hre) => {
   const { ethers } = hre;

@@ -2,11 +2,11 @@
 pragma solidity ^0.8.10;
 
 import {SafeCast} from '@openzeppelin/contracts/utils/math/SafeCast.sol';
-import {Errors} from '@aave/core-v3/contracts/protocol/libraries/helpers/Errors.sol';
-import {WadRayMath} from '@aave/core-v3/contracts/protocol/libraries/math/WadRayMath.sol';
-import {IPool} from '@aave/core-v3/contracts/interfaces/IPool.sol';
-import {IScaledBalanceToken} from '@aave/core-v3/contracts/interfaces/IScaledBalanceToken.sol';
-import {MintableIncentivizedERC20} from '@aave/core-v3/contracts/protocol/tokenization/base/MintableIncentivizedERC20.sol';
+import {Errors} from '@pegasys-fi/lending-core/contracts/protocol/libraries/helpers/Errors.sol';
+import {WadRayMath} from '@pegasys-fi/lending-core/contracts/protocol/libraries/math/WadRayMath.sol';
+import {IPool} from '@pegasys-fi/lending-core/contracts/interfaces/IPool.sol';
+import {IScaledBalanceToken} from '@pegasys-fi/lending-core/contracts/interfaces/IScaledBalanceToken.sol';
+import {MintableIncentivizedERC20} from '@pegasys-fi/lending-core/contracts/protocol/tokenization/base/MintableIncentivizedERC20.sol';
 
 /**
  * @title ScaledBalanceTokenBase

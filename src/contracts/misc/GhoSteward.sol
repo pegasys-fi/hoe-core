@@ -2,11 +2,11 @@
 pragma solidity ^0.8.10;
 
 import {Ownable} from '@openzeppelin/contracts/access/Ownable.sol';
-import {IPoolAddressesProvider} from '@aave/core-v3/contracts/interfaces/IPoolAddressesProvider.sol';
-import {IPoolConfigurator} from '@aave/core-v3/contracts/interfaces/IPoolConfigurator.sol';
-import {IPool} from '@aave/core-v3/contracts/interfaces/IPool.sol';
-import {DataTypes} from '@aave/core-v3/contracts/protocol/libraries/types/DataTypes.sol';
-import {PercentageMath} from '@aave/core-v3/contracts/protocol/libraries/math/PercentageMath.sol';
+import {IPoolAddressesProvider} from '@pegasys-fi/lending-core/contracts/interfaces/IPoolAddressesProvider.sol';
+import {IPoolConfigurator} from '@pegasys-fi/lending-core/contracts/interfaces/IPoolConfigurator.sol';
+import {IPool} from '@pegasys-fi/lending-core/contracts/interfaces/IPool.sol';
+import {DataTypes} from '@pegasys-fi/lending-core/contracts/protocol/libraries/types/DataTypes.sol';
+import {PercentageMath} from '@pegasys-fi/lending-core/contracts/protocol/libraries/math/PercentageMath.sol';
 import {GhoInterestRateStrategy} from '../facilitators/aave/interestStrategy/GhoInterestRateStrategy.sol';
 import {IGhoToken} from '../gho/interfaces/IGhoToken.sol';
 import {IGhoSteward} from './interfaces/IGhoSteward.sol';

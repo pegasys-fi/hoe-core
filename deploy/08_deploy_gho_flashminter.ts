@@ -2,7 +2,11 @@ import { HardhatRuntimeEnvironment } from 'hardhat/types';
 import { DeployFunction } from 'hardhat-deploy/types';
 import { ghoEntityConfig } from '../helpers/config';
 import { getGhoToken } from '../helpers/contract-getters';
-import { TREASURY_PROXY_ID, getPoolAddressesProvider, getTreasuryAddress } from '@aave/deploy-v3';
+import {
+  TREASURY_PROXY_ID,
+  getPoolAddressesProvider,
+  getTreasuryAddress,
+} from '@pollum-io/lending-deploy';
 
 const func: DeployFunction = async function ({
   getNamedAccounts,

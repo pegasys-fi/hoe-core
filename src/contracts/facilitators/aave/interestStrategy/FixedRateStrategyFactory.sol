@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.10;
 
-import {IDefaultInterestRateStrategy} from '@aave/core-v3/contracts/interfaces/IDefaultInterestRateStrategy.sol';
-import {VersionedInitializable} from '@aave/core-v3/contracts/protocol/libraries/aave-upgradeability/VersionedInitializable.sol';
+import {IDefaultInterestRateStrategy} from '@pegasys-fi/lending-core/contracts/interfaces/IDefaultInterestRateStrategy.sol';
+import {VersionedInitializable} from '@pegasys-fi/lending-core/contracts/protocol/libraries/aave-upgradeability/VersionedInitializable.sol';
 import {IFixedRateStrategyFactory} from './interfaces/IFixedRateStrategyFactory.sol';
 import {GhoInterestRateStrategy} from './GhoInterestRateStrategy.sol';
 

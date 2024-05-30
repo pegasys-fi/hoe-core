@@ -1,6 +1,6 @@
 import { DeployFunction } from 'hardhat-deploy/types';
 import { ghoReserveConfig } from '../helpers/config';
-import { getPoolAddressesProvider } from '@aave/deploy-v3/dist/helpers/contract-getters';
+import { getPoolAddressesProvider } from '@pollum-io/lending-deploy/dist/helpers/contract-getters';
 
 const func: DeployFunction = async function ({ getNamedAccounts, deployments, ...hre }) {
   const { deploy } = deployments;

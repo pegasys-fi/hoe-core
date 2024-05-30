@@ -46,9 +46,9 @@
     "ci:test": "npm run test"
   },
   "devDependencies": {
-    "@aave/deploy-v3": "^1.55.3",
     "@nomicfoundation/hardhat-foundry": "^1.1.1",
     "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "@pollum-io/lending-deploy": "^0.0.9",
     "@typechain/ethers-v5": "^10.0.0",
     "@typechain/hardhat": "^6.0.0",
     "@types/bluebird": "^3.5.38",
@@ -98,6 +98,7 @@
     "url": "git://github.com/aave/gho"
   },
   "dependencies": {
-    "@openzeppelin/contracts": "^4.9.6"
+    "@openzeppelin/contracts": "^4.9.6",
+    "@pollum-io/lending-core": "^0.0.3"
   }
 }

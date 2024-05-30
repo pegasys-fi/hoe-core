@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.10;
 
-import {IPoolAddressesProvider} from '@aave/core-v3/contracts/interfaces/IPoolAddressesProvider.sol';
-import {IPriceOracle} from '@aave/core-v3/contracts/interfaces/IPriceOracle.sol';
+import {IPoolAddressesProvider} from '@pegasys-fi/lending-core/contracts/interfaces/IPoolAddressesProvider.sol';
+import {IPriceOracle} from '@pegasys-fi/lending-core/contracts/interfaces/IPriceOracle.sol';
 import {AutomationCompatibleInterface} from '../dependencies/chainlink/AutomationCompatibleInterface.sol';
 import {IGsm} from '../interfaces/IGsm.sol';
 

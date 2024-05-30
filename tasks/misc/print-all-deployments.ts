@@ -1,4 +1,4 @@
-import { getWalletBalances } from '@aave/deploy-v3';
+import { getWalletBalances } from '@pollum-io/lending-deploy';
 import { task } from 'hardhat/config';
 
 task(`print-all-deployments`).setAction(async (_, { deployments, getNamedAccounts, ...hre }) => {
