@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import {IAToken} from '@pegasys-fi/lending-core/contracts/interfaces/IAToken.sol';
+import {IAToken} from '@pollum-io/lending-core/contracts/interfaces/IAToken.sol';
 import {IGhoFacilitator} from '../../../../gho/interfaces/IGhoFacilitator.sol';
 
 /**

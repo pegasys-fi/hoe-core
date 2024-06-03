@@ -6,18 +6,18 @@ import {GhoAToken} from '../../contracts/facilitators/aave/tokens/GhoAToken.sol'
 import {IGhoToken} from '../../contracts/gho/interfaces/IGhoToken.sol';
 import {GhoDiscountRateStrategy} from '../../contracts/facilitators/aave/interestStrategy/GhoDiscountRateStrategy.sol';
 import {GhoInterestRateStrategy} from '../../contracts/facilitators/aave/interestStrategy/GhoInterestRateStrategy.sol';
-import {IPool} from '@pegasys-fi/lending-core/contracts/interfaces/IPool.sol';
-import {IPoolAddressesProvider} from '@pegasys-fi/lending-core/contracts/interfaces/IPoolAddressesProvider.sol';
-import {IAaveIncentivesController} from '@pegasys-fi/lending-core/contracts/interfaces/IAaveIncentivesController.sol';
-import {Pool} from '@pegasys-fi/lending-core/contracts/protocol/pool/Pool.sol';
-import {UserConfiguration} from '@pegasys-fi/lending-core/contracts/protocol/libraries/configuration/UserConfiguration.sol';
-import {ReserveConfiguration} from '@pegasys-fi/lending-core/contracts/protocol/libraries/configuration/ReserveConfiguration.sol';
-import {ReserveLogic} from '@pegasys-fi/lending-core/contracts/protocol/libraries/logic/ReserveLogic.sol';
-import {Helpers} from '@pegasys-fi/lending-core/contracts/protocol/libraries/helpers/Helpers.sol';
-import {DataTypes} from '@pegasys-fi/lending-core/contracts/protocol/libraries/types/DataTypes.sol';
-import {StableDebtToken} from '@pegasys-fi/lending-core/contracts/protocol/tokenization/StableDebtToken.sol';
-import {IERC20} from '@pegasys-fi/lending-core/contracts/dependencies/openzeppelin/contracts/ERC20.sol';
-import {Errors} from '@pegasys-fi/lending-core/contracts/protocol/libraries/helpers/Errors.sol';
+import {IPool} from '@pollum-io/lending-core/contracts/interfaces/IPool.sol';
+import {IPoolAddressesProvider} from '@pollum-io/lending-core/contracts/interfaces/IPoolAddressesProvider.sol';
+import {IAaveIncentivesController} from '@pollum-io/lending-core/contracts/interfaces/IAaveIncentivesController.sol';
+import {Pool} from '@pollum-io/lending-core/contracts/protocol/pool/Pool.sol';
+import {UserConfiguration} from '@pollum-io/lending-core/contracts/protocol/libraries/configuration/UserConfiguration.sol';
+import {ReserveConfiguration} from '@pollum-io/lending-core/contracts/protocol/libraries/configuration/ReserveConfiguration.sol';
+import {ReserveLogic} from '@pollum-io/lending-core/contracts/protocol/libraries/logic/ReserveLogic.sol';
+import {Helpers} from '@pollum-io/lending-core/contracts/protocol/libraries/helpers/Helpers.sol';
+import {DataTypes} from '@pollum-io/lending-core/contracts/protocol/libraries/types/DataTypes.sol';
+import {StableDebtToken} from '@pollum-io/lending-core/contracts/protocol/tokenization/StableDebtToken.sol';
+import {IERC20} from '@pollum-io/lending-core/contracts/dependencies/openzeppelin/contracts/ERC20.sol';
+import {Errors} from '@pollum-io/lending-core/contracts/protocol/libraries/helpers/Errors.sol';
 
 /**
  * @dev MockPool removes assets and users validations from Pool contract.

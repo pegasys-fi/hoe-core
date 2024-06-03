@@ -52,7 +52,7 @@ You can find all audit reports under the [audits](./audits/) folder
 Clone the repository and run the following command to install dependencies:
 
 ```sh
-npm i
+yarn
 forge i
 ```
 
@@ -67,25 +67,25 @@ code .env
 Compile contracts:
 
 ```sh
-npm run compile
+yarn run compile
 ```
 
 Run the test suite:
 
 ```sh
-npm run test
+yarn run test
 ```
 
 Deploy and setup GHO in a local Hardhat network:
 
 ```sh
-npm run deploy-testnet
+yarn run deploy-testnet
 ```
 
 Deploy and setup GHO in Goerli testnet:
 
 ```sh
-npm run deploy-testnet:goerli
+yarn run deploy-testnet:goerli
 ```
 
 ## Connect with the community

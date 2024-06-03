@@ -1,5 +1,5 @@
 import { DeployFunction } from 'hardhat-deploy/types';
-import { StakedTokenV2Rev3__factory, STAKE_AAVE_PROXY, waitForTx } from '@pollum-io/lending-deploy';
+import { StakedTokenV3Rev3__factory, STAKE_AAVE_PROXY, waitForTx } from '@pollum-io/lending-deploy';
 
 const func: DeployFunction = async function ({ getNamedAccounts, deployments, ...hre }) {
   const { deploy } = deployments;
@@ -7,7 +7,7 @@ const func: DeployFunction = async function ({ getNamedAccounts, deployments, ..
   const [deployerSigner] = await hre.ethers.getSigners();
 
   const stkAaveProxy = await deployments.get(STAKE_AAVE_PROXY);
-  const instance = StakedTokenV2Rev3__factory.connect(stkAaveProxy.address, deployerSigner);
+  const instance = StakedTokenV3Rev3__factory.connect(stkAaveProxy.address, deployerSigner);
 
   const stakedAaveImpl = await deploy('StakedAaveV3Impl', {
     from: deployer,
