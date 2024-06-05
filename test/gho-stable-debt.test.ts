@@ -1,12 +1,12 @@
 import hre from 'hardhat';
 import { expect } from 'chai';
-import { ProtocolErrors } from '@aave/core-v3';
+import { ProtocolErrors } from '@pollum-io/lending-core';
 import { impersonateAccountHardhat } from '../helpers/misc-utils';
 import { makeSuite, TestEnv } from './helpers/make-suite';
 import { ONE_ADDRESS, ZERO_ADDRESS } from '../helpers/constants';
 import { GhoStableDebtToken__factory } from '../types';
 import { INITIALIZED } from './helpers/constants';
-import { evmRevert, evmSnapshot, getPoolConfiguratorProxy } from '@aave/deploy-v3';
+import { evmRevert, evmSnapshot, getPoolConfiguratorProxy } from '@pollum-io/lending-deploy';
 
 makeSuite('Gho StableDebtToken End-To-End', (testEnv: TestEnv) => {
   let ethers;

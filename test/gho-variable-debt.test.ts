@@ -4,7 +4,7 @@ import { makeSuite, TestEnv } from './helpers/make-suite';
 import { impersonateAccountHardhat } from '../helpers/misc-utils';
 import { ONE_ADDRESS, ZERO_ADDRESS } from '../helpers/constants';
 import { GhoVariableDebtToken__factory } from '../types';
-import { ProtocolErrors } from '@aave/core-v3';
+import { ProtocolErrors } from '@pollum-io/lending-core';
 import {
   INITIALIZED,
   CALLER_NOT_DISCOUNT_TOKEN,

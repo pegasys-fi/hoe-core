@@ -1,7 +1,7 @@
 import { HardhatRuntimeEnvironment } from 'hardhat/types';
 import { DeployFunction } from 'hardhat-deploy/types';
 import { getGhoToken } from '../helpers/contract-getters';
-import { getPoolAddressesProvider } from '@aave/deploy-v3';
+import { getPoolAddressesProvider } from '@pollum-io/lending-deploy';
 
 const func: DeployFunction = async function ({
   getNamedAccounts,

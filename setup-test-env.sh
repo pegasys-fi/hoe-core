@@ -10,15 +10,15 @@ set -e
 
 echo "[BASH] Setting up testnet environment"
 
-if [ ! "$COVERAGE" = true ]; then
-    # remove hardhat and artifacts cache
-    npm run ci:clean
+# if [ ! "$COVERAGE" = true ]; then
+#     # remove hardhat and artifacts cache
+#     npm run ci:clean
 
-    # compile contracts
-    npm run compile
-else
-    echo "[BASH] Skipping compilation to keep coverage artifacts"
-fi
+#     # compile contracts
+#     npm run compile
+# else
+#     echo "[BASH] Skipping compilation to keep coverage artifacts"
+# fi
 
 # Export MARKET_NAME variable to use Aave market as testnet deployment setup
 export MARKET_NAME="Test"

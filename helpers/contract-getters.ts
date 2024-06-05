@@ -87,10 +87,7 @@ export const getBaseImmutableAdminUpgradeabilityProxy = async (
   getContract('BaseImmutableAdminUpgradeabilityProxy', address);
 
 export const getERC20 = async (address: tEthereumAddress): Promise<IERC20> =>
-  getContract(
-    '@aave/core-v3/contracts/dependencies/openzeppelin/contracts/IERC20.sol:IERC20',
-    address
-  );
+  getContract('@openzeppelin/contracts/token/ERC20/IERC20.sol:IERC20', address);
 
 export const getAggregatorInterface = async (
   address?: tEthereumAddress

@@ -11,11 +11,11 @@ import {Events} from './helpers/Events.sol';
 import {AccessControlErrorsLib, OwnableErrorsLib} from './helpers/ErrorsLib.sol';
 
 // generic libs
-import {DataTypes} from '@aave/core-v3/contracts/protocol/libraries/types/DataTypes.sol';
-import {Errors} from '@aave/core-v3/contracts/protocol/libraries/helpers/Errors.sol';
-import {PercentageMath} from '@aave/core-v3/contracts/protocol/libraries/math/PercentageMath.sol';
-import {SafeCast} from '@aave/core-v3/contracts/dependencies/openzeppelin/contracts/SafeCast.sol';
-import {WadRayMath} from '@aave/core-v3/contracts/protocol/libraries/math/WadRayMath.sol';
+import {DataTypes} from 'pollum-io/lending-core/contracts/protocol/libraries/types/DataTypes.sol';
+import {Errors} from 'pollum-io/lending-core/contracts/protocol/libraries/helpers/Errors.sol';
+import {PercentageMath} from 'pollum-io/lending-core/contracts/protocol/libraries/math/PercentageMath.sol';
+import {SafeCast} from '@openzeppelin/contracts/utils/math/SafeCast.sol';
+import {WadRayMath} from 'pollum-io/lending-core/contracts/protocol/libraries/math/WadRayMath.sol';
 
 // mocks
 import {MockAclManager} from './mocks/MockAclManager.sol';
@@ -25,29 +25,29 @@ import {MockGsmV2} from './mocks/MockGsmV2.sol';
 import {MockPool} from './mocks/MockPool.sol';
 import {MockAddressesProvider} from './mocks/MockAddressesProvider.sol';
 import {MockERC4626} from './mocks/MockERC4626.sol';
-import {PriceOracle} from '@aave/core-v3/contracts/mocks/oracle/PriceOracle.sol';
-import {TestnetERC20} from '@aave/periphery-v3/contracts/mocks/testnet-helpers/TestnetERC20.sol';
-import {WETH9Mock} from '@aave/periphery-v3/contracts/mocks/WETH9Mock.sol';
+import {PriceOracle} from 'pollum-io/lending-core/contracts/mocks/oracle/PriceOracle.sol';
+import {TestnetERC20} from 'pollum-io/lending-periphery/contracts/mocks/testnet-helpers/TestnetERC20.sol';
+import {WETH9Mock} from 'pollum-io/lending-periphery/contracts/mocks/WETH9Mock.sol';
 
 // interfaces
-import {IAaveIncentivesController} from '@aave/core-v3/contracts/interfaces/IAaveIncentivesController.sol';
-import {IAToken} from '@aave/core-v3/contracts/interfaces/IAToken.sol';
+import {IAaveIncentivesController} from 'pollum-io/lending-core/contracts/interfaces/IAaveIncentivesController.sol';
+import {IAToken} from 'pollum-io/lending-core/contracts/interfaces/IAToken.sol';
 import {IERC20} from 'aave-stk-v1-5/src/interfaces/IERC20.sol';
 import {IERC3156FlashBorrower} from '@openzeppelin/contracts/interfaces/IERC3156FlashBorrower.sol';
 import {IERC3156FlashLender} from '@openzeppelin/contracts/interfaces/IERC3156FlashLender.sol';
 import {IERC4626} from '@openzeppelin/contracts/interfaces/IERC4626.sol';
 import {IGhoToken} from '../contracts/gho/interfaces/IGhoToken.sol';
 import {IGhoVariableDebtTokenTransferHook} from 'aave-stk-v1-5/src/interfaces/IGhoVariableDebtTokenTransferHook.sol';
-import {IPool} from '@aave/core-v3/contracts/interfaces/IPool.sol';
-import {IPoolAddressesProvider} from '@aave/core-v3/contracts/interfaces/IPoolAddressesProvider.sol';
+import {IPool} from 'pollum-io/lending-core/contracts/interfaces/IPool.sol';
+import {IPoolAddressesProvider} from 'pollum-io/lending-core/contracts/interfaces/IPoolAddressesProvider.sol';
 import {IStakedAaveV3} from 'aave-stk-v1-5/src/interfaces/IStakedAaveV3.sol';
 import {IFixedRateStrategyFactory} from '../contracts/facilitators/aave/interestStrategy/interfaces/IFixedRateStrategyFactory.sol';
 
 // non-GHO contracts
-import {AdminUpgradeabilityProxy} from '@aave/core-v3/contracts/dependencies/openzeppelin/upgradeability/AdminUpgradeabilityProxy.sol';
-import {ERC20} from '@aave/core-v3/contracts/dependencies/openzeppelin/contracts/ERC20.sol';
+import {AdminUpgradeabilityProxy} from 'pollum-io/lending-core/contracts/dependencies/openzeppelin/upgradeability/AdminUpgradeabilityProxy.sol';
+import {ERC20} from '@openzeppelin/contracts/token/ERC20/ERC20.sol';
 import {StakedAaveV3} from 'aave-stk-v1-5/src/contracts/StakedAaveV3.sol';
-import {ReserveConfiguration} from '@aave/core-v3/contracts/protocol/libraries/configuration/ReserveConfiguration.sol';
+import {ReserveConfiguration} from 'pollum-io/lending-core/contracts/protocol/libraries/configuration/ReserveConfiguration.sol';
 
 // GHO contracts
 import {GhoAToken} from '../contracts/facilitators/aave/tokens/GhoAToken.sol';
