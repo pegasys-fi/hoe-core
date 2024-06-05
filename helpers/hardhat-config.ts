@@ -3,8 +3,7 @@ import {
   eEthereumNetwork,
   FORK,
   FORK_BLOCK_NUMBER,
-  getAlchemyKey,
-} from '@pollum-io/lending-deploy/';
+} from '@pollum-io/lending-deploy';
 import { HardhatNetworkForkingUserConfig } from 'hardhat/types';
 import fs from 'fs';
 
@@ -13,20 +12,14 @@ const MNEMONIC = process.env.MNEMONIC || '';
 const MNEMONIC_PATH = "m/44'/60'/0'/0";
 
 export const NETWORKS_RPC_URL: Record<string, string> = {
-  [eEthereumNetwork.main]: `https://eth-mainnet.alchemyapi.io/v2/${getAlchemyKey(
-    eEthereumNetwork.main
-  )}`,
+  [eEthereumNetwork.rollux]: 'https://rpc.rollux.com',
   [eEthereumNetwork.hardhat]: 'http://localhost:8545',
-  [eEthereumNetwork.goerli]: `https://eth-goerli.alchemyapi.io/v2/${getAlchemyKey(
-    eEthereumNetwork.goerli
-  )}`,
-  sepolia: 'https://rpc.sepolia.ethpandaops.io',
 };
 
 const GAS_PRICE_PER_NET: Record<string, number> = {};
 
 export const LIVE_NETWORKS: Record<string, boolean> = {
-  [eEthereumNetwork.main]: true,
+  [eEthereumNetwork.rollux]: true,
 };
 
 /** HARDHAT HELPERS */

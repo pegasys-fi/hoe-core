@@ -87,8 +87,8 @@ const hardhatConfig: HardhatUserConfig = {
   external: {
     contracts: [
       {
-        artifacts: 'node_modules/@pollum-io/lending-deploy//artifacts',
-        deploy: 'node_modules/@pollum-io/lending-deploy//dist/deploy',
+        artifacts: 'node_modules/@pollum-io/lending-deploy/artifacts',
+        deploy: 'node_modules/@pollum-io/lending-deploy/dist/deploy',
       },
     ],
   },
