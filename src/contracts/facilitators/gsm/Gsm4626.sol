@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.10;
 
-import {IERC20} from '@aave/core-v3/contracts/dependencies/openzeppelin/contracts/IERC20.sol';
-import {GPv2SafeERC20} from '@aave/core-v3/contracts/dependencies/gnosis/contracts/GPv2SafeERC20.sol';
+import {IERC20} from '@pollum-io/lending-core/contracts/dependencies/openzeppelin/contracts/IERC20.sol';
+import {GPv2SafeERC20} from '@pollum-io/lending-core/contracts/dependencies/gnosis/contracts/GPv2SafeERC20.sol';
 import {SafeCast} from '@openzeppelin/contracts/utils/math/SafeCast.sol';
 import {IGhoFacilitator} from '../../gho/interfaces/IGhoFacilitator.sol';
 import {IGhoToken} from '../../gho/interfaces/IGhoToken.sol';

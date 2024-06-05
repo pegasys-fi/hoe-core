@@ -4,7 +4,7 @@ import {
   FORK,
   FORK_BLOCK_NUMBER,
   getAlchemyKey,
-} from '@aave/deploy-v3';
+} from '@pollum-io/lending-deploy/';
 import { HardhatNetworkForkingUserConfig } from 'hardhat/types';
 import fs from 'fs';
 

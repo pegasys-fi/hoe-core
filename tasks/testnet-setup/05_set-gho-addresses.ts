@@ -4,7 +4,7 @@ import {
   TREASURY_PROXY_ID,
   getAaveProtocolDataProvider,
   waitForTx,
-} from '@aave/deploy-v3';
+} from '@pollum-io/lending-deploy/';
 import { GhoToken } from '../../../types/src/contracts/gho/GhoToken';
 import { ghoReserveConfig } from '../../helpers/config';
 import {

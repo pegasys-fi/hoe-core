@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import {IVariableDebtToken} from '@aave/core-v3/contracts/interfaces/IVariableDebtToken.sol';
+import {IVariableDebtToken} from '@pollum-io/lending-core/contracts/interfaces/IVariableDebtToken.sol';
 
 /**
  * @title IGhoVariableDebtToken

@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import {SafeCast} from '@aave/core-v3/contracts/dependencies/openzeppelin/contracts/SafeCast.sol';
-import {WadRayMath} from '@aave/core-v3/contracts/protocol/libraries/math/WadRayMath.sol';
-import {PercentageMath} from '@aave/core-v3/contracts/protocol/libraries/math/PercentageMath.sol';
+import {SafeCast} from '@pollum-io/lending-core/contracts/dependencies/openzeppelin/contracts/SafeCast.sol';
+import {WadRayMath} from '@pollum-io/lending-core/contracts/protocol/libraries/math/WadRayMath.sol';
+import {PercentageMath} from '@pollum-io/lending-core/contracts/protocol/libraries/math/PercentageMath.sol';
 
 library DebtUtils {
   using WadRayMath for uint256;

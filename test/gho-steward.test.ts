@@ -10,7 +10,7 @@ import {
 } from '../helpers/misc-utils';
 import { ONE_ADDRESS } from '../helpers/constants';
 import { ProtocolErrors } from '@aave/core-v3';
-import { evmRevert, evmSnapshot, getPoolConfiguratorProxy } from '@aave/deploy-v3';
+import { evmRevert, evmSnapshot, getPoolConfiguratorProxy } from '@pollum-io/lending-deploy/';
 import { BigNumber } from 'ethers';
 import { GhoInterestRateStrategy__factory } from '../types';
 

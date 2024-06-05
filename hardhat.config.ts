@@ -1,7 +1,7 @@
 import { getCommonNetworkConfig, hardhatNetworkSettings } from './helpers/hardhat-config';
 import { config } from 'dotenv';
 import { HardhatUserConfig } from 'hardhat/types';
-import { DEFAULT_NAMED_ACCOUNTS, eEthereumNetwork } from '@aave/deploy-v3';
+import { DEFAULT_NAMED_ACCOUNTS, eEthereumNetwork } from '@pollum-io/lending-deploy/';
 import '@nomicfoundation/hardhat-toolbox';
 import '@nomicfoundation/hardhat-foundry';
 import 'hardhat-deploy';
@@ -11,7 +11,7 @@ import 'hardhat-tracer';
 config();
 
 import { loadHardhatTasks } from './helpers/misc-utils';
-import '@aave/deploy-v3';
+import '@pollum-io/lending-deploy/';
 
 // Prevent to load tasks before compilation and typechain
 if (!process.env.SKIP_LOAD) {
@@ -87,8 +87,8 @@ const hardhatConfig: HardhatUserConfig = {
   external: {
     contracts: [
       {
-        artifacts: 'node_modules/@aave/deploy-v3/artifacts',
-        deploy: 'node_modules/@aave/deploy-v3/dist/deploy',
+        artifacts: 'node_modules/@pollum-io/lending-deploy//artifacts',
+        deploy: 'node_modules/@pollum-io/lending-deploy//dist/deploy',
       },
     ],
   },

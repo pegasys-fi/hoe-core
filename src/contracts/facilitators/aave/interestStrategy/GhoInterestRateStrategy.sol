@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.10;
 
-import {DataTypes} from '@aave/core-v3/contracts/protocol/libraries/types/DataTypes.sol';
-import {IDefaultInterestRateStrategy} from '@aave/core-v3/contracts/interfaces/IDefaultInterestRateStrategy.sol';
-import {IReserveInterestRateStrategy} from '@aave/core-v3/contracts/interfaces/IReserveInterestRateStrategy.sol';
-import {IPoolAddressesProvider} from '@aave/core-v3/contracts/interfaces/IPoolAddressesProvider.sol';
+import {DataTypes} from '@pollum-io/lending-core/contracts/protocol/libraries/types/DataTypes.sol';
+import {IDefaultInterestRateStrategy} from '@pollum-io/lending-core/contracts/interfaces/IDefaultInterestRateStrategy.sol';
+import {IReserveInterestRateStrategy} from '@pollum-io/lending-core/contracts/interfaces/IReserveInterestRateStrategy.sol';
+import {IPoolAddressesProvider} from '@pollum-io/lending-core/contracts/interfaces/IPoolAddressesProvider.sol';
 
 /**
  * @title GhoInterestRateStrategy

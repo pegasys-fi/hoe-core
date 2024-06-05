@@ -6,7 +6,7 @@ import {IGsmPriceStrategy} from '../../../src/contracts/facilitators/gsm/priceSt
 import {IGsmFeeStrategy} from '../../../src/contracts/facilitators/gsm/feeStrategy/interfaces/IGsmFeeStrategy.sol';
 import {FixedPriceStrategyHarness} from './FixedPriceStrategyHarness.sol';
 import {FixedFeeStrategyHarness} from './FixedFeeStrategyHarness.sol';
-import {IERC20} from '@aave/core-v3/contracts/dependencies/openzeppelin/contracts/IERC20.sol';
+import {IERC20} from '@pollum-io/lending-core/contracts/dependencies/openzeppelin/contracts/IERC20.sol';
 
 contract GsmHarness is Gsm {
   constructor(

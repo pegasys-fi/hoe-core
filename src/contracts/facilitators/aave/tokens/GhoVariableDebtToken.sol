@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.10;
 
-import {IERC20} from '@aave/core-v3/contracts/dependencies/openzeppelin/contracts/IERC20.sol';
-import {SafeCast} from '@aave/core-v3/contracts/dependencies/openzeppelin/contracts/SafeCast.sol';
-import {VersionedInitializable} from '@aave/core-v3/contracts/protocol/libraries/aave-upgradeability/VersionedInitializable.sol';
-import {WadRayMath} from '@aave/core-v3/contracts/protocol/libraries/math/WadRayMath.sol';
-import {PercentageMath} from '@aave/core-v3/contracts/protocol/libraries/math/PercentageMath.sol';
-import {Errors} from '@aave/core-v3/contracts/protocol/libraries/helpers/Errors.sol';
-import {IPool} from '@aave/core-v3/contracts/interfaces/IPool.sol';
-import {IAaveIncentivesController} from '@aave/core-v3/contracts/interfaces/IAaveIncentivesController.sol';
-import {IInitializableDebtToken} from '@aave/core-v3/contracts/interfaces/IInitializableDebtToken.sol';
-import {IVariableDebtToken} from '@aave/core-v3/contracts/interfaces/IVariableDebtToken.sol';
-import {EIP712Base} from '@aave/core-v3/contracts/protocol/tokenization/base/EIP712Base.sol';
-import {DebtTokenBase} from '@aave/core-v3/contracts/protocol/tokenization/base/DebtTokenBase.sol';
+import {IERC20} from '@pollum-io/lending-core/contracts/dependencies/openzeppelin/contracts/IERC20.sol';
+import {SafeCast} from '@pollum-io/lending-core/contracts/dependencies/openzeppelin/contracts/SafeCast.sol';
+import {VersionedInitializable} from '@pollum-io/lending-core/contracts/protocol/libraries/aave-upgradeability/VersionedInitializable.sol';
+import {WadRayMath} from '@pollum-io/lending-core/contracts/protocol/libraries/math/WadRayMath.sol';
+import {PercentageMath} from '@pollum-io/lending-core/contracts/protocol/libraries/math/PercentageMath.sol';
+import {Errors} from '@pollum-io/lending-core/contracts/protocol/libraries/helpers/Errors.sol';
+import {IPool} from '@pollum-io/lending-core/contracts/interfaces/IPool.sol';
+import {IAaveIncentivesController} from '@pollum-io/lending-core/contracts/interfaces/IAaveIncentivesController.sol';
+import {IInitializableDebtToken} from '@pollum-io/lending-core/contracts/interfaces/IInitializableDebtToken.sol';
+import {IVariableDebtToken} from '@pollum-io/lending-core/contracts/interfaces/IVariableDebtToken.sol';
+import {EIP712Base} from '@pollum-io/lending-core/contracts/protocol/tokenization/base/EIP712Base.sol';
+import {DebtTokenBase} from '@pollum-io/lending-core/contracts/protocol/tokenization/base/DebtTokenBase.sol';
 
 // Gho Imports
 import {IGhoDiscountRateStrategy} from '../interestStrategy/interfaces/IGhoDiscountRateStrategy.sol';

@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.10;
 
-import {VersionedInitializable} from '@aave/core-v3/contracts/protocol/libraries/aave-upgradeability/VersionedInitializable.sol';
-import {IERC20} from '@aave/core-v3/contracts/dependencies/openzeppelin/contracts/IERC20.sol';
-import {GPv2SafeERC20} from '@aave/core-v3/contracts/dependencies/gnosis/contracts/GPv2SafeERC20.sol';
+import {VersionedInitializable} from '@pollum-io/lending-core/contracts/protocol/libraries/aave-upgradeability/VersionedInitializable.sol';
+import {IERC20} from '@pollum-io/lending-core/contracts/dependencies/openzeppelin/contracts/IERC20.sol';
+import {GPv2SafeERC20} from '@pollum-io/lending-core/contracts/dependencies/gnosis/contracts/GPv2SafeERC20.sol';
 import {EIP712} from '@openzeppelin/contracts/utils/cryptography/EIP712.sol';
 import {SignatureChecker} from '@openzeppelin/contracts/utils/cryptography/SignatureChecker.sol';
 import {SafeCast} from '@openzeppelin/contracts/utils/math/SafeCast.sol';

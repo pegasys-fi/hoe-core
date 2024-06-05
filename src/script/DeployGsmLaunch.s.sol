@@ -6,7 +6,7 @@ import {AaveV3Ethereum, AaveV3EthereumAssets} from 'aave-address-book/AaveV3Ethe
 import {GovernanceV3Ethereum} from 'aave-address-book/GovernanceV3Ethereum.sol';
 import {MiscEthereum} from 'aave-address-book/MiscEthereum.sol';
 import {TransparentUpgradeableProxy} from 'solidity-utils/contracts/transparent-proxy/TransparentUpgradeableProxy.sol';
-import {IPoolAddressesProvider} from '@aave/core-v3/contracts/interfaces/IPoolAddressesProvider.sol';
+import {IPoolAddressesProvider} from '@pollum-io/lending-core/contracts/interfaces/IPoolAddressesProvider.sol';
 import {Gsm} from '../contracts/facilitators/gsm/Gsm.sol';
 import {IGsm} from '../contracts/facilitators/gsm/interfaces/IGsm.sol';
 import {FixedPriceStrategy} from '../contracts/facilitators/gsm/priceStrategy/FixedPriceStrategy.sol';

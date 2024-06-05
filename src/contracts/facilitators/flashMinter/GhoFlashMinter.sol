@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import {IACLManager} from '@aave/core-v3/contracts/interfaces/IACLManager.sol';
-import {IPoolAddressesProvider} from '@aave/core-v3/contracts/interfaces/IPoolAddressesProvider.sol';
-import {PercentageMath} from '@aave/core-v3/contracts/protocol/libraries/math/PercentageMath.sol';
+import {IACLManager} from '@pollum-io/lending-core/contracts/interfaces/IACLManager.sol';
+import {IPoolAddressesProvider} from '@pollum-io/lending-core/contracts/interfaces/IPoolAddressesProvider.sol';
+import {PercentageMath} from '@pollum-io/lending-core/contracts/protocol/libraries/math/PercentageMath.sol';
 import {IERC3156FlashBorrower} from '@openzeppelin/contracts/interfaces/IERC3156FlashBorrower.sol';
 import {IERC3156FlashLender} from '@openzeppelin/contracts/interfaces/IERC3156FlashLender.sol';
 import {IGhoToken} from '../../gho/interfaces/IGhoToken.sol';

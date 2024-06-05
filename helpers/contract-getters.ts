@@ -88,7 +88,7 @@ export const getBaseImmutableAdminUpgradeabilityProxy = async (
 
 export const getERC20 = async (address: tEthereumAddress): Promise<IERC20> =>
   getContract(
-    '@aave/core-v3/contracts/dependencies/openzeppelin/contracts/IERC20.sol:IERC20',
+    '@pollum-io/lending-core/contracts/dependencies/openzeppelin/contracts/IERC20.sol:IERC20',
     address
   );
 

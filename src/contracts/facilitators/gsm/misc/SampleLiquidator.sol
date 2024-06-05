@@ -2,7 +2,7 @@
 pragma solidity ^0.8.10;
 
 import {Ownable} from '@openzeppelin/contracts/access/Ownable.sol';
-import {IERC20} from '@aave/core-v3/contracts/dependencies/openzeppelin/contracts/IERC20.sol';
+import {IERC20} from '@pollum-io/lending-core/contracts/dependencies/openzeppelin/contracts/IERC20.sol';
 import {IGhoToken} from '../../../gho/interfaces/IGhoToken.sol';
 import {IGsm} from '../interfaces/IGsm.sol';
 

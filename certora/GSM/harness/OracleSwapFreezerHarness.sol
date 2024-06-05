@@ -1,8 +1,8 @@
 pragma solidity ^0.8.0;
 
 import {OracleSwapFreezer} from '../../../src/contracts/facilitators/gsm/swapFreezer/OracleSwapFreezer.sol';
-import {IPoolAddressesProvider} from '@aave/core-v3/contracts/interfaces/IPoolAddressesProvider.sol';
-import {IPriceOracle} from '@aave/core-v3/contracts/interfaces/IPriceOracle.sol';
+import {IPoolAddressesProvider} from '@pollum-io/lending-core/contracts/interfaces/IPoolAddressesProvider.sol';
+import {IPriceOracle} from '@pollum-io/lending-core/contracts/interfaces/IPriceOracle.sol';
 //import {AutomationCompatibleInterface} from '../dependencies/chainlink/AutomationCompatibleInterface.sol';
 import {IGsm} from '../../../src/contracts/facilitators/gsm/interfaces/IGsm.sol';
 

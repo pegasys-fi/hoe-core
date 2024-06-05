@@ -1,7 +1,7 @@
 pragma solidity ^0.8.0;
 
 import {FixedFeeStrategy} from '../../../src/contracts/facilitators/gsm/feeStrategy/FixedFeeStrategy.sol';
-import {PercentageMath} from '@aave/core-v3/contracts/protocol/libraries/math/PercentageMath.sol';
+import {PercentageMath} from '@pollum-io/lending-core/contracts/protocol/libraries/math/PercentageMath.sol';
 
 contract FixedFeeStrategyHarness is FixedFeeStrategy {
   constructor(uint256 buyFee, uint256 sellFee) FixedFeeStrategy(buyFee, sellFee) {}

@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.10;
 
-import {SafeCast} from '@aave/core-v3/contracts/dependencies/openzeppelin/contracts/SafeCast.sol';
-import {Errors} from '@aave/core-v3/contracts/protocol/libraries/helpers/Errors.sol';
-import {WadRayMath} from '@aave/core-v3/contracts/protocol/libraries/math/WadRayMath.sol';
-import {IPool} from '@aave/core-v3/contracts/interfaces/IPool.sol';
-import {IScaledBalanceToken} from '@aave/core-v3/contracts/interfaces/IScaledBalanceToken.sol';
-import {MintableIncentivizedERC20} from '@aave/core-v3/contracts/protocol/tokenization/base/MintableIncentivizedERC20.sol';
+import {SafeCast} from '@pollum-io/lending-core/contracts/dependencies/openzeppelin/contracts/SafeCast.sol';
+import {Errors} from '@pollum-io/lending-core/contracts/protocol/libraries/helpers/Errors.sol';
+import {WadRayMath} from '@pollum-io/lending-core/contracts/protocol/libraries/math/WadRayMath.sol';
+import {IPool} from '@pollum-io/lending-core/contracts/interfaces/IPool.sol';
+import {IScaledBalanceToken} from '@pollum-io/lending-core/contracts/interfaces/IScaledBalanceToken.sol';
+import {MintableIncentivizedERC20} from '@pollum-io/lending-core/contracts/protocol/tokenization/base/MintableIncentivizedERC20.sol';
 
 /**
  * @title ScaledBalanceTokenBase

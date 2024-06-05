@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import {IPool} from '@aave/core-v3/contracts/interfaces/IPool.sol';
-import {DataTypes} from '@aave/core-v3/contracts/protocol/libraries/types/DataTypes.sol';
-import {ReserveConfiguration} from '@aave/core-v3/contracts/protocol/libraries/configuration/ReserveConfiguration.sol';
+import {IPool} from '@pollum-io/lending-core/contracts/interfaces/IPool.sol';
+import {DataTypes} from '@pollum-io/lending-core/contracts/protocol/libraries/types/DataTypes.sol';
+import {ReserveConfiguration} from '@pollum-io/lending-core/contracts/protocol/libraries/configuration/ReserveConfiguration.sol';
 
 contract MockConfigurator {
   using ReserveConfiguration for DataTypes.ReserveConfigurationMap;
