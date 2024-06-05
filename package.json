@@ -46,7 +46,7 @@
     "ci:test": "npm run test"
   },
   "devDependencies": {
-    "@aave/deploy-v3": "^1.55.3",
+    "@pollum-io/lending-deploy": "^0.0.11",
     "@nomicfoundation/hardhat-foundry": "^1.1.1",
     "@nomicfoundation/hardhat-toolbox": "^2.0.2",
     "@typechain/ethers-v5": "^10.0.0",
