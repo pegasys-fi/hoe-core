@@ -46,13 +46,15 @@
     "ci:test": "npm run test"
   },
   "devDependencies": {
+    "@pollum-io/lending-deploy": "^0.0.11",
+    "@pollum-io/lending-core": "^0.0.3",
+    "@openzeppelin/contracts": "^4.9.6",
     "@nomicfoundation/hardhat-chai-matchers": "^1.0.6",
     "@nomicfoundation/hardhat-foundry": "^1.1.1",
     "@nomicfoundation/hardhat-network-helpers": "^1.0.11",
     "@nomicfoundation/hardhat-toolbox": "^2.0.2",
     "@nomiclabs/hardhat-ethers": "^2.2.3",
     "@nomiclabs/hardhat-etherscan": "^3.1.8",
-    "@pollum-io/lending-deploy": "^0.0.11",
     "@typechain/ethers-v5": "^10.0.0",
     "@typechain/hardhat": "^6.0.0",
     "@types/bluebird": "^3.5.38",
@@ -101,11 +103,5 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/aave/gho"
-  },
-  "dependencies": {
-    "@openzeppelin/contracts": "^4.9.6",
-    "@pollum-io/lending-core": "^0.0.3",
-    "@pollum-io/lending-periphery": "^0.0.3",
-    "@pollum-io/pegasys-stake": "^0.0.2"
   }
 }

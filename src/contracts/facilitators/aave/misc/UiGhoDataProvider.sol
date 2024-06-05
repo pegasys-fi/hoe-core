@@ -2,8 +2,8 @@
 pragma solidity ^0.8.10;
 
 import {IERC20} from '@openzeppelin/contracts/token/ERC20/IERC20.sol';
-import {IPool} from '@pollum-io/lending-core/contracts/interfaces/IPool.sol';
-import {DataTypes} from '@pollum-io/lending-core/contracts/protocol/libraries/types/DataTypes.sol';
+import {IPool} from 'pollum-io/lending-core/contracts/interfaces/IPool.sol';
+import {DataTypes} from 'pollum-io/lending-core/contracts/protocol/libraries/types/DataTypes.sol';
 import {IGhoToken} from '../../../gho/interfaces/IGhoToken.sol';
 import {GhoDiscountRateStrategy} from '../interestStrategy/GhoDiscountRateStrategy.sol';
 import {IGhoVariableDebtToken} from '../tokens/interfaces/IGhoVariableDebtToken.sol';

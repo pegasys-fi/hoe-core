@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: BUSL-1.1
 pragma solidity ^0.8.10;
 
-import {IERC20} from '@pollum-io/lending-core/contracts/dependencies/openzeppelin/contracts/IERC20.sol';
-import {VersionedInitializable} from '@pollum-io/lending-core/contracts/protocol/libraries/aave-upgradeability/VersionedInitializable.sol';
-import {MathUtils} from '@pollum-io/lending-core/contracts/protocol/libraries/math/MathUtils.sol';
-import {WadRayMath} from '@pollum-io/lending-core/contracts/protocol/libraries/math/WadRayMath.sol';
-import {Errors} from '@pollum-io/lending-core/contracts/protocol/libraries/helpers/Errors.sol';
-import {IAaveIncentivesController} from '@pollum-io/lending-core/contracts/interfaces/IAaveIncentivesController.sol';
-import {IInitializableDebtToken} from '@pollum-io/lending-core/contracts/interfaces/IInitializableDebtToken.sol';
-import {IStableDebtToken} from '@pollum-io/lending-core/contracts/interfaces/IStableDebtToken.sol';
-import {IPool} from '@pollum-io/lending-core/contracts/interfaces/IPool.sol';
-import {EIP712Base} from '@pollum-io/lending-core/contracts/protocol/tokenization/base/EIP712Base.sol';
-import {DebtTokenBase} from '@pollum-io/lending-core/contracts/protocol/tokenization/base/DebtTokenBase.sol';
-import {IncentivizedERC20} from '@pollum-io/lending-core/contracts/protocol/tokenization/base/IncentivizedERC20.sol';
+import {IERC20} from 'pollum-io/lending-core/contracts/dependencies/openzeppelin/contracts/IERC20.sol';
+import {VersionedInitializable} from 'pollum-io/lending-core/contracts/protocol/libraries/aave-upgradeability/VersionedInitializable.sol';
+import {MathUtils} from 'pollum-io/lending-core/contracts/protocol/libraries/math/MathUtils.sol';
+import {WadRayMath} from 'pollum-io/lending-core/contracts/protocol/libraries/math/WadRayMath.sol';
+import {Errors} from 'pollum-io/lending-core/contracts/protocol/libraries/helpers/Errors.sol';
+import {IAaveIncentivesController} from 'pollum-io/lending-core/contracts/interfaces/IAaveIncentivesController.sol';
+import {IInitializableDebtToken} from 'pollum-io/lending-core/contracts/interfaces/IInitializableDebtToken.sol';
+import {IStableDebtToken} from 'pollum-io/lending-core/contracts/interfaces/IStableDebtToken.sol';
+import {IPool} from 'pollum-io/lending-core/contracts/interfaces/IPool.sol';
+import {EIP712Base} from 'pollum-io/lending-core/contracts/protocol/tokenization/base/EIP712Base.sol';
+import {DebtTokenBase} from 'pollum-io/lending-core/contracts/protocol/tokenization/base/DebtTokenBase.sol';
+import {IncentivizedERC20} from 'pollum-io/lending-core/contracts/protocol/tokenization/base/IncentivizedERC20.sol';
 import {SafeCast} from '@openzeppelin/contracts/utils/math/SafeCast.sol';
 
 /**

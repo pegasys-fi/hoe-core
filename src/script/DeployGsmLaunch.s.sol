@@ -2,11 +2,11 @@
 pragma solidity ^0.8.0;
 
 import {Script, console2} from 'forge-std/Script.sol';
-import {AaveV3Ethereum, AaveV3EthereumAssets} from 'aave-address-book/AaveV3Ethereum.sol';
-import {GovernanceV3Ethereum} from 'aave-address-book/GovernanceV3Ethereum.sol';
-import {MiscEthereum} from 'aave-address-book/MiscEthereum.sol';
+import {AaveV3Ethereum, AaveV3EthereumAssets} from 'pegasys-lending-address-book/AaveV3Ethereum.sol';
+import {GovernanceV3Ethereum} from 'pegasys-lending-address-book/GovernanceV3Ethereum.sol';
+import {MiscEthereum} from 'pegasys-lending-address-book/MiscEthereum.sol';
 import {TransparentUpgradeableProxy} from 'solidity-utils/contracts/transparent-proxy/TransparentUpgradeableProxy.sol';
-import {IPoolAddressesProvider} from '@pollum-io/lending-core/contracts/interfaces/IPoolAddressesProvider.sol';
+import {IPoolAddressesProvider} from 'pollum-io/lending-core/contracts/interfaces/IPoolAddressesProvider.sol';
 import {Gsm} from '../contracts/facilitators/gsm/Gsm.sol';
 import {IGsm} from '../contracts/facilitators/gsm/interfaces/IGsm.sol';
 import {FixedPriceStrategy} from '../contracts/facilitators/gsm/priceStrategy/FixedPriceStrategy.sol';

@@ -3,11 +3,11 @@ pragma solidity ^0.8.10;
 
 import {Ownable} from '@openzeppelin/contracts/access/Ownable.sol';
 import {EnumerableSet} from '@openzeppelin/contracts/utils/structs/EnumerableSet.sol';
-import {IPoolAddressesProvider} from '@pollum-io/lending-core/contracts/interfaces/IPoolAddressesProvider.sol';
-import {IPoolConfigurator} from '@pollum-io/lending-core/contracts/interfaces/IPoolConfigurator.sol';
-import {IPool} from '@pollum-io/lending-core/contracts/interfaces/IPool.sol';
-import {DataTypes} from '@pollum-io/lending-core/contracts/protocol/libraries/types/DataTypes.sol';
-import {ReserveConfiguration} from '@pollum-io/lending-core/contracts/protocol/libraries/configuration/ReserveConfiguration.sol';
+import {IPoolAddressesProvider} from 'pollum-io/lending-core/contracts/interfaces/IPoolAddressesProvider.sol';
+import {IPoolConfigurator} from 'pollum-io/lending-core/contracts/interfaces/IPoolConfigurator.sol';
+import {IPool} from 'pollum-io/lending-core/contracts/interfaces/IPool.sol';
+import {DataTypes} from 'pollum-io/lending-core/contracts/protocol/libraries/types/DataTypes.sol';
+import {ReserveConfiguration} from 'pollum-io/lending-core/contracts/protocol/libraries/configuration/ReserveConfiguration.sol';
 import {GhoInterestRateStrategy} from '../facilitators/aave/interestStrategy/GhoInterestRateStrategy.sol';
 import {IFixedRateStrategyFactory} from '../facilitators/aave/interestStrategy/interfaces/IFixedRateStrategyFactory.sol';
 import {FixedFeeStrategy} from '../facilitators/gsm/feeStrategy/FixedFeeStrategy.sol';

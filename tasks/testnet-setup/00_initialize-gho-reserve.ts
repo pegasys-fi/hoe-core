@@ -6,7 +6,7 @@ import {
   INCENTIVES_PROXY_ID,
   TREASURY_PROXY_ID,
 } from '@pollum-io/lending-deploy';
-import { ConfiguratorInputTypes } from '@pollum-io/lending-deploy/dist/types/typechain/@pollum-io/lending-core/contracts/interfaces/IPoolConfigurator';
+import { ConfiguratorInputTypes } from '@pollum-io/lending-deploy/dist/types/typechain/pollum-io/lending-core/contracts/interfaces/IPoolConfigurator';
 
 const printReserveInfo = (initReserveEvent) => {
   console.log(`Gho Reserve Initialized`);

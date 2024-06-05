@@ -1,8 +1,10 @@
+pollum-io/lending-core/=lib/core/
+pollum-io/lending-periphery/=lib/lending-periphery/
 aave-stk-v1-5/=lib/aave-stk-v1-5/
 ds-test/=lib/forge-std/lib/ds-test/src/
 eth-gas-reporter/=node_modules/eth-gas-reporter/
 forge-std/=lib/forge-std/src/
 hardhat-deploy/=node_modules/hardhat-deploy/
 hardhat/=node_modules/hardhat/
-aave-address-book/=lib/aave-address-book/src/
+pegasys-lending-address-book/=lib/pegasys-lending-address-book/src/
 solidity-utils/=lib/solidity-utils/src/

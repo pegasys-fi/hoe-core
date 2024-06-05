@@ -707,11 +707,6 @@
     lodash "^4.17.19"
     node-fetch "^2.6.0"
 
-"@pollum-io/lending-core@0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@pollum-io/lending-core/-/lending-core-0.0.1.tgz#f8b09e04692e2325d65bc78b4e23994acfd489ab"
-  integrity sha512-VpQkl3ARhRi8VmDaAl1obXUG2sfhg8EkkTQ6OjGKMP36pygl9HgQFRp3UWGoprJdPXxFjbQXXT7WHXopPrkYGA==
-
 "@pollum-io/lending-core@^0.0.3":
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/@pollum-io/lending-core/-/lending-core-0.0.3.tgz#1670655881f99ebe342cc1e8e9ad4036b3c0ced0"
@@ -723,18 +718,6 @@
   integrity sha512-Rt58sAEhdkpK/FrkowRIfiDhuPa1E9AynoBgoPtj1SLx9+aTZ7ALjypvzT0g42Y1ConvqH9eOBGiF8I5K4+c+g==
   dependencies:
     "@openzeppelin/defender-relay-client" "^1.54.1"
-
-"@pollum-io/lending-periphery@^0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@pollum-io/lending-periphery/-/lending-periphery-0.0.3.tgz#f9a32f06c2e045634231d8e5a96d400a0453ac51"
-  integrity sha512-mqBXYdjyEEqzBEjYZloBFb8HgKEe/vVa9aR9o4ZvX1OdV1QFtSrvLBhyzI127EWlQUYc8Xdj4AtEgzSwvjFAJw==
-  dependencies:
-    "@pollum-io/lending-core" "0.0.1"
-
-"@pollum-io/pegasys-stake@^0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@pollum-io/pegasys-stake/-/pegasys-stake-0.0.2.tgz#8aad4707c143e54512fc6e74eaba99e5e3eb1855"
-  integrity sha512-3hYZ+d/nMfATXEpamHwQ8AfW7pZoj5w0YC90CxfnvgNNJGq4ky6IonnbVkzzXlrT5onV6bdJOU8UsU8tIhoquA==
 
 "@scure/base@~1.1.0", "@scure/base@~1.1.4":
   version "1.1.6"
@@ -971,9 +954,9 @@
   integrity sha512-Z61JK7DKDtdKTWwLeElSEBcWGRLY8g95ic5FoQqI9CMx0ns/Ghep3B4DfcEimiKMvtamNVULVNKEsiwV3aQmXw==
 
 "@types/node@*":
-  version "20.14.0"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.14.0.tgz#49ceec7b34f8621470cff44677fa9d461a477f17"
-  integrity sha512-5cHBxFGJx6L4s56Bubp4fglrEpmyJypsqI6RgzMfBHWUJQGWAAi8cWcgetEbZXHYXo9C2Fa4EEds/uSyS4cxmA==
+  version "20.14.1"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.14.1.tgz#2434dbcb1f039e31f2c0e9969da93f52cf6348f3"
+  integrity sha512-T2MzSGEu+ysB/FkWfqmhV3PLyQlowdptmmgD20C6QxsS8Fmv5SjpZ1ayXaEC0S21/h5UJ9iA6W/5vSNU5l00OA==
   dependencies:
     undici-types "~5.26.4"
 
@@ -1062,14 +1045,14 @@ aggregate-error@^3.0.0:
     indent-string "^4.0.0"
 
 ajv@^8.0.1:
-  version "8.14.0"
-  resolved "https://registry.yarnpkg.com/ajv/-/ajv-8.14.0.tgz#f514ddfd4756abb200e1704414963620a625ebbb"
-  integrity sha512-oYs1UUtO97ZO2lJ4bwnWeQW8/zvOIQLGKcvPTsWmvc2SYgBb+upuNS5NxoLaMU4h8Ju3Nbj6Cq8mD2LQoqVKFA==
+  version "8.15.0"
+  resolved "https://registry.yarnpkg.com/ajv/-/ajv-8.15.0.tgz#d918c661e3e820bbbc65a320e182ee56a1aa978a"
+  integrity sha512-15BTtQUOsSrmHCy+B4VnAiJAJxJ8IFgu6fcjFQF3jQYZ78nLSQthlFg4ehp+NLIyfvFgOlxNsjKIEhydtFPVHQ==
   dependencies:
     fast-deep-equal "^3.1.3"
+    fast-uri "^2.3.0"
     json-schema-traverse "^1.0.0"
     require-from-string "^2.0.2"
-    uri-js "^4.4.1"
 
 amazon-cognito-identity-js@^6.0.1:
   version "6.3.12"
@@ -2165,6 +2148,11 @@ fast-levenshtein@~2.0.6:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz#3d8a5c66883a16a30ca8643e851f19baa7797917"
   integrity sha512-DCXu6Ifhqcks7TZKY3Hxp3y6qphY5SJZmrWMDrKcERSOXWQdMhU9Ig/PYrzyw/ul9jOIyh0N4M0tbC5hodg8dw==
+
+fast-uri@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/fast-uri/-/fast-uri-2.3.0.tgz#bdae493942483d299e7285dcb4627767d42e2793"
+  integrity sha512-eel5UKGn369gGEWOqBShmFJWfq/xSJvsgDzgLYC845GneayWvXBf0lJCBn5qTABfewy1ZDPoaR5OZCP+kssfuw==
 
 fastq@^1.6.0:
   version "1.17.1"
@@ -3481,11 +3469,6 @@ proxy-from-env@^1.1.0:
   resolved "https://registry.yarnpkg.com/proxy-from-env/-/proxy-from-env-1.1.0.tgz#e102f16ca355424865755d2c9e8ea4f24d58c3e2"
   integrity sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==
 
-punycode@^2.1.0:
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.3.1.tgz#027422e2faec0b25e1549c3e1bd8309b9133b6e5"
-  integrity sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==
-
 qs@^6.4.0, qs@^6.9.4:
   version "6.12.1"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.12.1.tgz#39422111ca7cbdb70425541cba20c7d7b216599a"
@@ -4276,13 +4259,6 @@ unpipe@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/unpipe/-/unpipe-1.0.0.tgz#b2bf4ee8514aae6165b4817829d21b2ef49904ec"
   integrity sha512-pjy2bYhSsufwWlKwPc+l3cN7+wuJlK6uz0YdJEOlQDbl6jo/YlPi4mb8agUkVC8BF7V8NuzeyPNqRksA3hztKQ==
-
-uri-js@^4.4.1:
-  version "4.4.1"
-  resolved "https://registry.yarnpkg.com/uri-js/-/uri-js-4.4.1.tgz#9b1a52595225859e55f669d928f88c6c57f2a77e"
-  integrity sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==
-  dependencies:
-    punycode "^2.1.0"
 
 utf8@3.0.0:
   version "3.0.0"
