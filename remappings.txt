@@ -1,17 +1,11 @@
-@pollum-io/lending-core/=lib/lending-core/
-@pollum-io/lending-periphery/=lib/lending-periphery/
 @aave/=lib/aave-token/
 @openzeppelin/=lib/openzeppelin-contracts/
 aave-stk-v1-5/=lib/aave-stk-v1-5/
 ds-test/=lib/forge-std/lib/ds-test/src/
-eth-gas-reporter/=node_modules/eth-gas-reporter/
 forge-std/=lib/forge-std/src/
 hardhat-deploy/=node_modules/hardhat-deploy/
 hardhat/=node_modules/hardhat/
 pegasys-lending-address-book/=lib/pegasys-lending-address-book/src/
 aave-helpers/=lib/aave-stk-v1-5/lib/aave-helpers/
-lending-core/=lib/pegasys-lending-address-book/lib/lending-core/
-lending-periphery/=lib/pegasys-lending-address-book/lib/lending-periphery/
-erc4626-tests/=lib/aave-stk-v1-5/lib/openzeppelin-contracts/lib/erc4626-tests/
 openzeppelin-contracts/=lib/aave-stk-v1-5/lib/openzeppelin-contracts/
 solidity-utils/=lib/solidity-utils/src/
